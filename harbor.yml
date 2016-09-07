@@ -1,0 +1,12 @@
+imagetag: leocwolter/authentication
+downloadpath: build
+s3:
+  bucket: prod.qettal.config
+  basepath: authentication
+files:
+  - s3path: application.properties
+    filename: application.properties
+    permission: 0644
+commands:
+  - mvn clean package
+  - cp target/authentication*.jar build/authentication.jar
