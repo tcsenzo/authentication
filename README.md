@@ -11,7 +11,20 @@ docker run --name mysql -e MYSQL_DATABASE=auth -e MYSQL_ROOT_PASSWORD=<password>
 
 ```
 
-- Run the checkout container linked with the mysql instance:
+- Pull the new version:
+
+```bash
+docker pull leocwolter/authentication
+```
+
+- Stop and remove the running container:
+
+```
+docker stop checkout
+docker rm checkout
+```
+
+- Run the container:
 
 ```bash
 docker run --name auth -p 8080:8080 --link mysql:mysql -d leocwolter/authentication
