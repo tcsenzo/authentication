@@ -1,6 +1,6 @@
 package com.senzo.qettal.auth.users;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -21,7 +21,7 @@ public class User {
 	private String email;
 	private String password;
 	@Column(name="created_at")
-	private LocalDateTime createdAt = LocalDateTime.now();
+	private Instant createdAt = Instant.now();
 
 	/**
 	 * @deprecated Hibernate eyes only

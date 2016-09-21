@@ -1,4 +1,4 @@
-qettal.datasource.url = jdbc:mysql://localhost/auth
+qettal.datasource.jdbcUrl = jdbc:mysql://localhost/auth
 qettal.datasource.driverClassName = com.mysql.jdbc.Driver
 qettal.datasource.username=root
 qettal.datasource.password=
